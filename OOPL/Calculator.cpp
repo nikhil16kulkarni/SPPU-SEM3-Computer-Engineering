@@ -1,6 +1,6 @@
 //============================================================================
 // Name        : Calculator.cpp
-// Author      : 
+// Author      : Nikhil Kulkarni
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style

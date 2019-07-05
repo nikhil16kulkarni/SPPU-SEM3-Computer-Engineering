@@ -4,7 +4,6 @@
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
-//============================================================================
 
 // Problem Statement : 
 //Write a C++ program to create a calculator for an arithmetic operator (+, -,
@@ -19,6 +18,8 @@
 //Enter first number, operator, second number: 12 + 100
 //Answer = 112
 //Do another (y/n)? n
+
+//============================================================================
 
 
 #include <iostream>

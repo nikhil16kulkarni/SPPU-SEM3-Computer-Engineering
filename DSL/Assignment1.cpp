@@ -1,3 +1,19 @@
+ //============================================================================
+// Name        : Assignment1.cpp
+// Author      : Nikhil Kulkarni
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+
+// Problem Statement :
+// Write C/C++ program to store marks scored for first test of subject 'Data Structures and Algorithms' for N students. Compute
+// I. The average score of class
+// II. Highest score and lowest score of class
+// III. Marks scored by most of the students
+// IV. list of students who were absent for the test
+
+//============================================================================
+
  #include<iostream>
  using namespace std;
 

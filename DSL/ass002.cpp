@@ -1,11 +1,11 @@
 //============================================================================
-// Name        : String.cpp
-// Author      : 
+// Name        : Assignment2(String).cpp
+// Author      : Nikhil Kulkarni
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
 //============================================================================
-
+// INCOMPLETE //
 #include <iostream>
 using namespace std;
 class String

@@ -4,6 +4,17 @@
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
+
+//Problem Statement : Implement a class Quadratic that represents degree two polynomials i.e.,
+//                    polynomials of type ax 2 +bx+c. The class will require three data members
+//                    corresponding to a, b and c.
+//                    Implement the following operations:
+//                    A constructor (including a default constructor which creates the polynomial).
+//                    Overloaded operator+ to add two polynomials of degree 2.
+//                    Overloaded << and >> to print and read polynomials. To do this,
+//                    you will need to decide what you want your input and output format to look like.
+//                    A function eval that computes the value of a polynomial for a given value of x.
+//                    A function that computes the two solutions of the equation ax 2 +bx+ c=0.
 //============================================================================
 
 //______________________________INCOMPLETE_________________________________//

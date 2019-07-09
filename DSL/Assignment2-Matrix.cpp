@@ -1,3 +1,19 @@
+//============================================================================
+// Name        : Assignment2(Matrix).cpp
+// Author      : Nikhil Kulkarni
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+
+// Problem statement : Write C++ program for storing matrix. Write functions for
+//                     Check whether given matrix is upper triangular or not
+//                     Compute summation of diagonal elements 
+//                     Compute transpose of matrix 
+//                     Add, subtract and multiply two matrices  
+//                     Check saddle point is present or not.
+
+//============================================================================
+
 #include<iostream>
 using namespace std;
 class matrix

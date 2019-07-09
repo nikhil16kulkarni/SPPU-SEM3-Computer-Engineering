@@ -15,206 +15,346 @@
 //                     (Note: Make use of character array to perform all operations)
 
 //============================================================================
-// INCOMPLETE //
-#include <iostream>
+
+#include<bits/stdc++.h>
 using namespace std;
-class String
+
+class str
 {
-	char str[200];
-	int len;
-public:
-String()
-{
-	cout<<"Enter the string\n";
-	cin.getline(str,199);
-}
-	void copy();
-	void length();
-	void equal();
-	void concat();
-	void rev();
-	void substring();
-	void freq();
-	void del();
-	void chardelete();
+	char ch[200];
+	public:
+	str(){ ch[0]='\0'; }
+	void read();
+	void display();
+	int substr(str);
+	int subStr(str);
+	int replace(str,str);
+	void copy(str);
+	void menu();
+	int len();
+	void concat(str);
+	void reverse();
+	int compare(str);
+	int frequency(char);
+	int palindrome();
+	str chardelete(char);
+	str modify(int,int);
 };
-void String::copy()
+str str::modify(int start,int span)
 {
-	int i=0;
-	char scpy[200];
-	while(str[i]!='\0')
+	str s;
+	int i,j=0;
+	for(i=0;i<len();i++)
 	{
-		scpy[i]=str[i];
-		i++;
-	}
-	scpy[i]='\0';
-	cout<<"\nThe copied string is:"<<scpy;
-}
-void String::length()
-{
-	int i=0;
-	while(str[i]!='\0')
-	{
-		i++;
-	}
-	len=i;
-	cout<<"Length of the string is "<<len;
-}
-void String::equal()
-{
-	int i=0,j=0,flag=0;
-	char snew[200];
-	cout<<"\nEnter another String to check whether equal or not\n";
-	cin.getline(snew,199);
-	while(str[i]!='\0'||snew[j]!='\0')
-	{
-		if(str[i]!=snew[j])
-		{
-			cout<<"Both strings are not equal\n";
-			flag=1;
-			break;
-		}
-		i++;
-		j++;
-	}
-	if(i==j&&flag==0)
-	{
-		cout<<"Both strings are equal\n";
-	}
-}
-void String::concat()
-{
-	char scat[200];
-	int j=0,i=len;
-	cout<<"\nEnter the string to concat with first string\n";
-	cin.getline(scat,199);
-	while(scat[j]!='\0')
-	{
-		str[i]=scat[j];
-		i++;
-		j++;
-	}
-	str[i]='\0';
-	cout<<"After concatenation the new string is\n"<<str;
-}
-void String::rev()
-{
-	char srev[200];
-	int i=0;
-	while(str[i]!='\0')
-	{
-		srev[i]=str[len-1-i];
-		i++;
-	}
-	srev[i]='\0';
-	cout<<"Reverse string is:"<<srev;
-}
-void String::substring()
-{
-	char sub[199],sub2[199];
-	int i,lsub,j=0,pos,length,flag=0;
-	cout<<"\nEnter the position and length from which substring has to be taken\n";
-	cin>>pos>>length;
-	i=0;
-	while(i<length)
-	{
-		sub[i]=str[pos+i-1];
-		i++;
-	}
-	sub[i]='\0';
-	cout<<"SubString is "<<sub;
-	cout<<"\nEnter the string to check whether substring or not\n";
-	cin.ignore(1);
-	cin.getline(sub2,198);
-	i=0;
-	while(sub2[i]!='\0')
-	{
-		i++;
-	}
-	lsub=i;
-	i=0;
-	while(str[i]!='\0'&&sub2[j]!='\0')
-	{
-		if(str[i]==sub2[j])
-		{
-			flag++;
-			i++;
-			j++;
-		}
+		if(i==start)
+			i=i+span;
 		else
 		{
-			flag=0;
-			i++;
+			s.ch[j]=ch[i];
+			j++;
 		}
 	}
-	if(flag==lsub)
+	s.ch[j]='\0';
+	return s;
+}
+str str::chardelete(char c)
+{
+	str s;
+	int i,j=0;
+	for(i=0;i<len();i++)
 	{
-		cout<<"SubString is present\n";
+		if(ch[i]!=c)
+		{
+			s.ch[j]=ch[i];
+			j++;
+		}
+	}
+	if(i==j)
+	cout<<"\t---->Character: "<<c<<" Not Found"<<endl;
+	s.ch[j]='\0';
+	return s;
+}
+int str::palindrome()
+{
+	int i,f=1,l=len();
+	for(i=0;i<len();i++)
+	if(ch[i]!=ch[l-i-1])
+	f=0;
+	if(f)
+	return 1;
+	else
+	return 0;
+}
+int str::frequency(char c)
+{
+	int i,count=0;
+	for(i=0;i<len();i++)
+	{
+		if(ch[i]==c)
+		count++;
+	}
+	return count;
+}
+int str::compare(str s1)
+{
+	int f=1,i,l,l1;
+	l=len();
+	l1=s1.len();
+	for(i=0;i<l;i++)
+	if(ch[i]!=s1.ch[i])
+	f=0;
+	if(l1==l&&f)
+	return 1;
+	else
+	return 0;
+}
+void str::reverse()
+{
+	int i,l=len();
+	char temp;
+	for(i=0;i<l/2;i++)
+	{
+		temp=ch[i];
+		ch[i]=ch[l-i-1];
+		ch[l-i-1]=temp;
+	}
+	ch[l]='\0';
+}
+void str::menu()
+{
+	cout<<endl<<"------------------STRING FUNCTIONS--------------------"<<endl;
+	cout<<"\tPress 1  : Enter String"<<endl;
+	cout<<"\tPress 2  : Display"<<endl;
+	cout<<"\tPress 3  : Find Length"<<endl;
+	cout<<"\tPress 4  : Copy"<<endl;
+	cout<<"\tPress 5  : concatenate"<<endl;
+	cout<<"\tPress 6  : find substring"<<endl;
+	cout<<"\tPress 7  : replace a substring"<<endl;
+	cout<<"\tPress 8  : Reverse the string"<<endl;
+	cout<<"\tPress 9  : compare with another string"<<endl;
+	cout<<"\tPress 10 : check frequency of any Character"<<endl;
+	cout<<"\tPress 11 : check Palindrome"<<endl;
+	cout<<"\tPress 12 : delete a character"<<endl;
+	cout<<"\tPress 13 : delete by index and span"<<endl;
+	cout<<"\tPress 0  : exit"<<endl;
+}
+int str::len()
+{
+	int i;
+	for(i=0;ch[i]!='\0';i++);
+	return i;
+}
+void str::copy(str s1)
+{
+	int i;
+	for(i=0;s1.ch[i]!=0;i++)
+	{
+		ch[i]=s1.ch[i];
+	}
+	ch[i]='\0';
+}
+void str::read()
+{
+	cin.getline(ch,200);
+}
+void str::display()
+{
+	cout<<"\t -----> "<<ch;
+}
+void str::concat(str s1)
+{
+	int i,j,l1,l;
+	l=len();
+	l1=s1.len();
+	for(i=l,j=0;j<l1;j++,i++)
+	{
+		ch[i]=s1.ch[j];
+	}
+	ch[i]='\0';
+}
+int str::substr(str s1)
+{
+	int l1,f,c=0,index[50],t=0;
+	int i,j,l;
+	l=len();
+
+	l1=s1.len();
+	for(i=0;i<=l-l1;i++)
+	{
+		f=1;
+		for(j=0;j<l1;j++)
+		{
+			if(ch[i+j]!=s1.ch[j])
+			f=0;
+		}
+		if(f!=0)
+		{
+			c++;
+			index[t]=i;
+			t++;
+		}
+	}
+	if(c>0)
+	{
+		cout<<endl<<"yes at index value: ";
+		for(i=0;i<t;i++)
+		{
+			cout<<index[i]<<", ";
+		}
+		return index[0];
 	}
 	else
 	{
-		cout<<"SubString not present\n";
+		cout<<endl<<s1.ch<<" Not Found in "<<ch;
+		return -1;
 	}
 }
-void String::freq()
+int str::subStr(str s1)
 {
-	int cnt=0,i;
-	char ch;
-	cout<<"Enter the character whose frequency you wish to find\n";
-	cin>>ch;
-	for(i=0;i<len;i++)
+	int l1,f,c=0,index[50],t=0;
+	int i,j,l;
+	l=len();
+
+	l1=s1.len();
+	for(i=0;i<=l-l1;i++)
 	{
-		if(str[i]==ch)
+		f=1;
+		for(j=0;j<l1;j++)
 		{
-			cnt++;
+			if(ch[i+j]!=s1.ch[j])
+			f=0;
+		}
+		if(f!=0)
+		{
+			c++;
+			index[t]=i;
+			t++;
 		}
 	}
-	cout<<"Frequency of the character is "<<cnt<<endl;
+	if(c>0)
+		return index[0];
+	else
+		return -1;
 }
-void String::del()
+int str::replace(str s1,str s2)
 {
-	char sub[199];
-	int i=0,length,start;
-	cout<<"Enter the start and length from which new string has to be taken\n";
-	cin>>start>>length;
-	while(i<length)
+	int l1,index=0,l2;
+	int i,count=0,j;
+	str app;
+		l1=s1.len();
+		l2=s2.len();
+		index=subStr(s1);
+	while(index!=-1)
 	{
-		sub[i]=str[start+i];
-		i++;
-	}
-	sub[i]='\0';
-	cout<<"New String is "<<sub;
-}
-void String::chardelete()
-{
-	int i=0,j=0;
-	while(str[i]!='\0')
-	{
-		if(str[i]=='c'||str[i]=='C')
+		//Separating the append part
+		count++;
+		app.ch[0]='\0';
+		for(i=index+l1,j=0;i<len();i++,j++)
 		{
-			j=i+1;
-			while(str[j]!='\0')
-			{
-				str[j-1]=str[j];
-				j++;
-			}
+			app.ch[j]=ch[i];
 		}
-		i++;
+		app.ch[j]='\0';
+		//coping the replacement
+		for(i=index,j=0;j<l2;i++,j++)
+		{
+			ch[i]=s2.ch[j];
+		}
+		ch[i]='\0';
+		concat(app);
+		index=subStr(s1);
 	}
-	cout<<endl<<"After removing C/c the new string is:"<<str;
+	if(count)
+		return 1;
+	else
+		return 0;
 }
 int main()
 {
-	String Str;
-	Str.length();
-	Str.copy();
-	Str.equal();
-	Str.rev();
-	Str.concat();
-	Str.substring();
-	Str.freq();
-	Str.chardelete();
-	//Str.del();
-	//Str.chardelete();
+	str s,s1,s2,app;
+	int ch=1,i,j;
+	char c,buffer[10];
+	s.menu();
+	cout<<endl<<"\t";
+	while (ch!=0){
+
+		switch(ch)
+		{
+			case 1:cout<<"Enter The String: ";
+					s.read();
+					break;
+			case 2: s.display();
+					break;
+			case 3: cout<<"-----> Length Of the string is: "<<s.len();
+					break;
+			case 4: cout<<"Enter String to be copied: ";
+					s1.read();
+					s.copy(s1);
+					s.display();
+					break;
+			case 5: cout<<"Enter The append String: ";
+					app.read();
+					s.concat(app);
+					s.display();
+					break;
+			case 6: cout<<"Enter the substring:";
+					s1.read();
+					s.substr(s1);
+					break;
+			case 7: cout<<"Enter the string to be replaced: ";
+					s1.read();
+					cout<<"Enter the Replacement: ";
+					s2.read();
+					if(s.replace(s1,s2))
+					s.display();
+					else
+					cout<<"\t---->Substring Not Found";
+					break;
+			case 8: s.reverse();
+					s.display();
+					break;
+			case 9:cout<<"Enter String to compare: ";
+					s1.read();
+					if(s.compare(s1))
+					cout<<"\t----> Strings are Equal"<<endl;
+					else
+					cout<<"\t----> Strings are Not Equal"<<endl;
+					break;
+			case 10:cout<<"Enter The Character: ";
+					cin>>c;
+					s.display();
+					cout<<endl;
+					cout<<"\t ----> Character: "<<c<<" has occurred "<<s.frequency(c)<<" times";
+					break;
+			case 11:if(s.palindrome())
+					cout<<"\t----> String is Palindrome"<<endl;
+					else
+					cout<<"\t----> String is not Palindrome"<<endl;
+					break;
+			case 12:cout<<"Enter character: ";
+					cin>>c;
+					s=s.chardelete(c);
+					s.display();
+					break;
+			case 13:cout<<"Enter Starting Point: ";
+					cin>>i;
+					cout<<"Enter Span: ";
+					cin>>j;
+					s1=s.modify(i-1,j-1);
+					if (s1.len())
+					s1.display();
+					else
+					cout<<"\t---->NULL";
+					break;
+			case 0: cout<<endl<<"Exiting....";
+					break;
+			default:cout<<endl<<"!!!!!!Enter a valid Choice form Menu!!!!!!";
+		}
+		//s.menu();
+		cout<<endl<<"_______________________________________________";
+		cout<<endl<<"Enter Choice from Menu [Press 0 to exit]: ";
+		cin>>ch;
+		gets(buffer);
+	}
 	return 0;
 }
+

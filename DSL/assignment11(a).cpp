@@ -4,6 +4,11 @@
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
+
+// Problem Statement : a) Write C++ program to store roll numbers of student in array who attended training program in random order. 
+//                     Write function for searching whether particular student attended training program or not using 
+//	               1) linear search and 
+//	               2) sentinel search. 
 //============================================================================
 
 #include <iostream>

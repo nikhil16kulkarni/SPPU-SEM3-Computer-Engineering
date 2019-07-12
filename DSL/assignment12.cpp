@@ -1,9 +1,15 @@
 //============================================================================
-// Name        : assignment12.cpp
+// Name        : assignment12(a).cpp
 // Author      : Nikhil Kulkarni
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
+
+// Problem Statement : Write C++ program to store first year percentage of students in array. Write function for sorting array 
+//                     of floating point numbers in ascending order using 
+//             	       a) Selection Sort 
+//	               b) Bubble sort 
+//	               and display top five scores.
 //============================================================================
 
 #include <iostream>

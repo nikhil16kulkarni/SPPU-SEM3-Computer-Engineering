@@ -4,6 +4,11 @@
 // Version     :
 // Copyright   : do not copy
 // Description : Hello World in C++, Ansi-style
+/* Problem Statement - Write a C++ program to realize polynomial equation and perform operations. Write function    
+                       To input &output polynomials represented as bmxem+ bm-1xem-1 +….. +b0xe0.  Your functions should overload the << and >> operators. 
+                       Evaluates a polynomial at given value of x 
+                       Add two polynomials. 
+                       Multiplies two polynomials.*/
 //============================================================================
 
 #include<bits/stdc++.h>

@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : Assignment2(String).cpp
+// Name        : Assignment2(b).cpp
 // Author      : Nikhil Kulkarni
 // Version     :
 // Copyright   : Your copyright notice

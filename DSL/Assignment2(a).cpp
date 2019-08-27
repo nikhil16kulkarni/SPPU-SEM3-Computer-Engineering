@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : Assignment2(Matrix).cpp
+// Name        : Assignment2(a).cpp
 // Author      : Nikhil Kulkarni
 // Version     :
 // Copyright   : Your copyright notice

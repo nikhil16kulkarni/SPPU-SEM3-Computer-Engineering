@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : polynomial.cpp
+// Name        : Assignment3(b).cpp
 // Author      : Nikhil Kulkarni
 // Version     :
 // Copyright   : do not copy

@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : assignment12(a).cpp
+// Name        : Assignment12(a).cpp
 // Author      : Nikhil Kulkarni
 // Version     :
 // Copyright   : Your copyright notice

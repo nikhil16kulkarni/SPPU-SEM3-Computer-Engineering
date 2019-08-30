@@ -85,7 +85,7 @@ int main()
             i=i+1;
         }
     }
-    if(s1.isempty())
+    if(s1.Isempty())
     {
         cout<<"\nValid Expresion...!!\n";
     }

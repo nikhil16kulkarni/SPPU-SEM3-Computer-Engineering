@@ -61,7 +61,7 @@ int main()
     stack s1;
     char exp[20],ch;
     int i=0;
-    cout<<"\nEnter the expression to check whether it is in well form or not :  ";
+    cout<<"\nEnter the expression to check whether it is valid or invalid :  ";
     cin>>exp;
     if((exp[0]==')')||(exp[0]==']')||(exp[0]=='}'))
     {
@@ -87,11 +87,11 @@ int main()
     }
     if(s1.isempty())
     {
-        cout<<"\nExpression is well parenthesis...\n";
+        cout<<"\nValid Expresion...!!\n";
     }
     else
     {
-        cout<<"\nSorry !!! Invalid Expression or not in well parenthesized....\n";
+        cout<<"\nInvalid Expression or not in well parenthesized....\n";
     }
     return 0;
 }

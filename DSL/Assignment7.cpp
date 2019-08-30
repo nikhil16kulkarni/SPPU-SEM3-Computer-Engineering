@@ -4,34 +4,35 @@
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
+/* Problem Statement :  In any language program mostly syntax error occurs due to unbalancing delimiter such as (),{},[]. 
+                        Write C++ program using stack to check whether given expression is well parenthesized or not. */
 //============================================================================
 
 #include<bits/stdc++.h>
 using namespace std;
-#define size 10
+#define size 100
 
-class stackexp
-{
+class stack{
     int top;
     char stk[size];
 public:
-    stackexp()
+    stack()
     {
      top=-1;
     }
     void push(char);
     char pop();
-    int isfull();
-    int isempty();
+    int Isfull();
+    int Isempty();
 };
 
-void stackexp::push(char x)
+void stack::push(char x)
 {
     top=top+1;
     stk[top]=x;
 }
 
-char stackexp::pop()
+char stack::pop()
 {
     char s;
     s=stk[top];
@@ -39,7 +40,7 @@ char stackexp::pop()
     return s;
 }
 
-int stackexp::isfull()
+int stack::Isfull()
 {
     if(top==size)
         return 1;
@@ -47,7 +48,7 @@ int stackexp::isfull()
         return 0;
 }
 
-int stackexp::isempty()
+int stack::Isempty()
 {
     if(top==-1)
         return 1;
@@ -57,7 +58,7 @@ int stackexp::isempty()
 
 int main()
 {
-    stackexp s1;
+    stack s1;
     char exp[20],ch;
     int i=0;
     cout<<"\nEnter the expression to check whether it is in well form or not :  ";

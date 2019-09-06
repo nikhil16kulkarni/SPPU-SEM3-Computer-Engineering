@@ -4,99 +4,109 @@
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
-/* Problem Statement :  In any language program mostly syntax error occurs due to unbalancing delimiter such as (),{},[]. 
-                        Write C++ program using stack to check whether given expression is well parenthesized or not. */
 //============================================================================
 
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
-#define size 100
-
-class stack{
-    int top;
-    char stk[size];
+class stack
+{
 public:
-    stack()
-    {
-     top=-1;
-    }
-    void push(char);
-    char pop();
-    int Isfull();
-    int Isempty();
+	char s[100];
+	int top;
+	stack()
+	{
+		top=-1;
+	}
+	void push(char s1)
+	{
+			top++;
+			s[top]=s1;
+
+	}
+	char top1()
+	{
+		return s[top];
+	}
+	void pop()
+	{
+		s[top]=NULL;
+
+		{
+			top--;
+		}
+	}
 };
 
-void stack::push(char x)
-{
-    top=top+1;
-    stk[top]=x;
+int main() {
+	stack s3;
+	string s;
+	cin>>s;
+	int i,flag=0;
+	char x;
+	for(i=0;i<s.size();i++)
+	{
+		if(s[i]=='('||s[i]=='{'||s[i]=='[')
+		{
+			s3.push(s[i]);
+		}
+		else if(s3.top==-1)
+		{
+			cout<<"Incorrect Parenthesis"<<endl;
+			flag=1;
+			break;
+		}
+		else
+		{
+			switch (s[i])
+			{
+			case '}':
+				x=s3.s[s3.top];
+				if(x=='('||x=='[')
+				{
+					flag=1;
+					cout<<"Incorrect Parenthesis"<<endl;
+					break;
+				}
+				else
+				{
+					s3.pop();
+				}
+				break;
+			case ')' :
+				x=s3.s[s3.top];
+				if(x=='{'||x=='[')
+				{
+					flag=1;
+					cout<<"Incorrect Parenthesis"<<endl;
+					break;
+				}
+				else
+				{
+					s3.pop();
+				}
+				break;
+			case ']':
+				x=s3.s[s3.top];
+				if(x=='{'||x=='(')
+				{
+					flag=1;
+					cout<<"Incorrect Parenthesis"<<endl;
+					break;
+				}
+				else
+				{
+					s3.pop();
+				}
+				break;
+			}
+		}
+		if(flag==1)
+		{
+			break;
+		}
+	}
+	if(flag==0)
+	{
+		cout<<"Correct Parenthesis"<<endl;
+	}
 }
-
-char stack::pop()
-{
-    char s;
-    s=stk[top];
-    top=top-1;
-    return s;
-}
-
-int stack::Isfull()
-{
-    if(top==size)
-        return 1;
-    else
-        return 0;
-}
-
-int stack::Isempty()
-{
-    if(top==-1)
-        return 1;
-    else
-        return 0;
-}
-
-int main()
-{
-    stack s1;
-    char exp[20],ch;
-    int i=0;
-    cout<<"\nEnter the expression to check whether it is valid or invalid :  ";
-    cin>>exp;
-    if((exp[0]==')')||(exp[0]==']')||(exp[0]=='}'))
-    {
-        cout<<"\n Invalid Expression.....\n";
-        return 0;
-    }
-    else
-    {
-        while(exp[i]!='\0')
-        {
-            ch=exp[i];
-            switch(ch)
-            {
-            case '(':s1.push(ch);break;
-            case '[':s1.push(ch);break;
-            case '{':s1.push(ch);break;
-            case ')':s1.pop();break;
-            case ']':s1.pop();break;
-            case '}':s1.pop();break;
-            }
-            i=i+1;
-        }
-    }
-    if(s1.Isempty())
-    {
-        cout<<"\nValid Expresion...!!\n";
-    }
-    else
-    {
-        cout<<"\nInvalid Expression or not in well parenthesized....\n";
-    }
-    return 0;
-}
-
-
-
-
-

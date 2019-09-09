@@ -1,18 +1,16 @@
 //============================================================================
-// Name        : Complex_no.cpp
+// Name        : Assignment2.cpp
 // Author      : Nikhil Kulkarni
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
 
-// Problem Statement :
-//Implement a class Complex which represents the Complex Number data
-//type. Implement the following operations:
-//1. Constructor (including a default constructor which creates the
-//complex number 0+0i).
-//2. Overloaded operator+ to add two complex numbers.
-//3. Overloaded operator* to multiply two complex numbers.
-//4. Overloaded << and >> to print and read complex Numbers.
+/* Problem Statement :  Implement a class Complex which represents the Complex Number data type. Implement the following operations:
+			1. Constructor (including a default constructor which creates the
+			complex number 0+0i).
+			2. Overloaded operator+ to add two complex numbers.
+			3. Overloaded operator* to multiply two complex numbers.
+			4. Overloaded << and >> to print and read complex Numbers. */
 
 //============================================================================
 

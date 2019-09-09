@@ -1,9 +1,11 @@
 //============================================================================
-// Name        : Assignment7.cpp
+// Name        : Assignment10.cpp
 // Author      : Nikhil Kulkarni
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
+/* Problem Statement :  Write a function template selection sort. Write a program that inputs, sorts
+			and outputs an int array and a float array. */
 //============================================================================
 
 #include <iostream>

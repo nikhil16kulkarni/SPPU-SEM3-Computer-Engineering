@@ -1,9 +1,10 @@
 //============================================================================
-// Name        : Assignment8.cpp
+// Name        : Assignment11.cpp
 // Author      : Nikhil Kulkarni
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
+/* Problem Statement :  Write C++ program using STL for implementation of stack & queue using SLL */
 //============================================================================
 
 #include <bits/stdc++.h>

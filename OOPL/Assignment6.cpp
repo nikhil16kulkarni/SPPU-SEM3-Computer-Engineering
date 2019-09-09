@@ -4,6 +4,12 @@
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
+/* Problem Statement :  Create employee bio-data using following classes
+			i)Personal record
+			ii)Professional record
+			iii)Academic record
+			Assume appropriate data members and member function to accept required
+			data & print bio-data. Create bio-data using multiple inheritances using C++ */
 //============================================================================
 
 

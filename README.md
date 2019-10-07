@@ -6,3 +6,4 @@ DSL - Data Structures Lab --> Subject - Data Structures & Algorithms(DSA).
 
 OOPL - Object Oriented Programming Lab --> Subject - Object Oriented Programming(OOP).
 
+DEL - Digital Electronics Lab --> Subject - Digital Electronics & Logic Design(DELD).

@@ -1,6 +1,6 @@
 //============================================================================
 // Name        : deque.cpp
-// Author      : kandlagunta rohith
+// Author      : Nikhil Kulkarni
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style

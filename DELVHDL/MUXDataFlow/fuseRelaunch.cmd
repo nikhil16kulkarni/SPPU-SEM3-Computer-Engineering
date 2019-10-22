@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/near/VHDL/MUXDataFlow/TEST_MUX_isim_beh.exe" -prj "/home/near/VHDL/MUXDataFlow/TEST_MUX_beh.prj" "work.TEST_MUX" 

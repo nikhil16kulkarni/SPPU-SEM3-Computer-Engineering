@@ -1,0 +1,5 @@
+set -tmpdir "/home/near/VHDL/MUXBehavioral/xst/projnav.tmp"
+set -xsthdpdir "/home/near/VHDL/MUXBehavioral/xst"
+elaborate
+-ifn MUX.prj
+-ifmt mixed

@@ -1,0 +1,6 @@
+V3 3
+FL /home/near/VHDL/JKFFBehavioral/JK_FF.vhd 2019/10/22.14:26:21 P.20131013
+EN work/JK_FF 1571734590 FL /home/near/VHDL/JKFFBehavioral/JK_FF.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/JK_FF/BEHAVIORAL 1571734591 \
+      FL /home/near/VHDL/JKFFBehavioral/JK_FF.vhd EN work/JK_FF 1571734590

@@ -1,0 +1,5 @@
+set -tmpdir "/home/near/VHDL/MUXStructural/xst/projnav.tmp"
+set -xsthdpdir "/home/near/VHDL/MUXStructural/xst"
+elaborate
+-ifn INV0.prj
+-ifmt mixed

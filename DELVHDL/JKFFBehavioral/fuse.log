@@ -1,0 +1,21 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/near/VHDL/JKFFBehavioral/TEST_JK_FF_isim_beh.exe -prj /home/near/VHDL/JKFFBehavioral/TEST_JK_FF_beh.prj work.TEST_JK_FF 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/near/VHDL/JKFFBehavioral/JK_FF.vhd" into library work
+Parsing VHDL file "/home/near/VHDL/JKFFBehavioral/TEST_JK_FF.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95964 KB
+Fuse CPU Usage: 980 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity JK_FF [jk_ff_default]
+Compiling architecture behavior of entity test_jk_ff
+Time Resolution for simulation is 1ps.
+Compiled 5 VHDL Units
+Built simulation executable /home/near/VHDL/JKFFBehavioral/TEST_JK_FF_isim_beh.exe
+Fuse Memory Usage: 1185912 KB
+Fuse CPU Usage: 1000 ms
+GCC CPU Usage: 200 ms

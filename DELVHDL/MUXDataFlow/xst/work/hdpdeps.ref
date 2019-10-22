@@ -1,0 +1,6 @@
+V3 3
+FL /home/near/VHDL/MUXDataFlow/MUX.vhd 2019/10/22.04:31:09 P.20131013
+EN work/MUX 1571698882 FL /home/near/VHDL/MUXDataFlow/MUX.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUX/DATAFLOW 1571698883 \
+      FL /home/near/VHDL/MUXDataFlow/MUX.vhd EN work/MUX 1571698882

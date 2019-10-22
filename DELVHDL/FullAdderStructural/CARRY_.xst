@@ -1,0 +1,5 @@
+set -tmpdir "/home/near/VHDL/FullAdderStructural/xst/projnav.tmp"
+set -xsthdpdir "/home/near/VHDL/FullAdderStructural/xst"
+elaborate
+-ifn CARRY_.prj
+-ifmt mixed

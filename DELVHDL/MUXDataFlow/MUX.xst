@@ -1,0 +1,5 @@
+set -tmpdir "/home/near/VHDL/MUXDataFlow/xst/projnav.tmp"
+set -xsthdpdir "/home/near/VHDL/MUXDataFlow/xst"
+elaborate
+-ifn MUX.prj
+-ifmt mixed

@@ -1,0 +1,6 @@
+V3 3
+FL /home/near/VHDL/FullAdderDataFlow/FULL_ADDER.vhd 2019/10/22.02:48:07 P.20131013
+EN work/FULL_ADDER 1571692689 FL /home/near/VHDL/FullAdderDataFlow/FULL_ADDER.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/FULL_ADDER/DATA_FLOW 1571692690 \
+      FL /home/near/VHDL/FullAdderDataFlow/FULL_ADDER.vhd EN work/FULL_ADDER 1571692689

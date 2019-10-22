@@ -1,0 +1,6 @@
+AR carry0 dataflow /home/near/VHDL/FullAdderStructural/CARRY_.vhd sub00/vhpl05 1571696918
+EN carry0 NULL /home/near/VHDL/FullAdderStructural/CARRY_.vhd sub00/vhpl02 1571696917
+AR sum0 dataflow /home/near/VHDL/FullAdderStructural/SUM_.vhd sub00/vhpl04 1571696909
+AR full_adder structural /home/near/VHDL/FullAdderStructural/FULL_ADDER.vhd sub00/vhpl01 1571696786
+EN full_adder NULL /home/near/VHDL/FullAdderStructural/FULL_ADDER.vhd sub00/vhpl00 1571696785
+EN sum0 NULL /home/near/VHDL/FullAdderStructural/SUM_.vhd sub00/vhpl03 1571696908

@@ -1,0 +1,4 @@
+vhdl isim_temp "SUM_.vhd"
+vhdl isim_temp "CARRY_.vhd"
+vhdl isim_temp "FULL_ADDER.vhd"
+vhdl isim_temp "TEST_FULL_ADDER.vhd"

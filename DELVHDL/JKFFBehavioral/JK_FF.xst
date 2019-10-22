@@ -1,0 +1,5 @@
+set -tmpdir "/home/near/VHDL/JKFFBehavioral/xst/projnav.tmp"
+set -xsthdpdir "/home/near/VHDL/JKFFBehavioral/xst"
+elaborate
+-ifn JK_FF.prj
+-ifmt mixed

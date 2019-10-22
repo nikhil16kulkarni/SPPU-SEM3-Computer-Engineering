@@ -1,0 +1,5 @@
+vhdl isim_temp "OR0.vhd"
+vhdl isim_temp "INV0.vhd"
+vhdl isim_temp "AND0.vhd"
+vhdl isim_temp "MUX.vhd"
+vhdl isim_temp "TEST_MUX.vhd"

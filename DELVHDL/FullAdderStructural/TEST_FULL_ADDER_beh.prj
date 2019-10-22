@@ -1,0 +1,4 @@
+vhdl work "SUM_.vhd"
+vhdl work "CARRY_.vhd"
+vhdl work "FULL_ADDER.vhd"
+vhdl work "TEST_FULL_ADDER.vhd"

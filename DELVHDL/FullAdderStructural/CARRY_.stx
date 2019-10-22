@@ -1,0 +1,40 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/near/VHDL/FullAdderStructural/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/near/VHDL/FullAdderStructural/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/near/VHDL/FullAdderStructural/CARRY_.vhd" in Library work.
+Entity <CARRY0> compiled.
+ERROR:HDLParsers:3621 - "/home/near/VHDL/FullAdderStructural/CARRY_.vhd" Line 30. The basic identifier CARRY_ is illegal because it ends with an underline character (VHDL IEEE 1076-2000 LRM 13.3.1).
+ERROR:HDLParsers:164 - "/home/near/VHDL/FullAdderStructural/CARRY_.vhd" Line 30. parse error, unexpected IS, expecting IDENTIFIER
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+
+
+Total memory usage is 478112 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

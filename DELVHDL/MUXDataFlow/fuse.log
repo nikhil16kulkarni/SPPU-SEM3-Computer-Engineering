@@ -1,0 +1,22 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/near/VHDL/MUXDataFlow/TEST_MUX_isim_beh.exe -prj /home/near/VHDL/MUXDataFlow/TEST_MUX_beh.prj work.TEST_MUX 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/near/VHDL/MUXDataFlow/MUX.vhd" into library work
+Parsing VHDL file "/home/near/VHDL/MUXDataFlow/TEST_MUX.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95964 KB
+Fuse CPU Usage: 990 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture dataflow of entity MUX [mux_default]
+Compiling architecture behavior of entity test_mux
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable /home/near/VHDL/MUXDataFlow/TEST_MUX_isim_beh.exe
+Fuse Memory Usage: 1185904 KB
+Fuse CPU Usage: 1010 ms
+GCC CPU Usage: 500 ms

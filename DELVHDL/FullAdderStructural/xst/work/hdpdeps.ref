@@ -1,0 +1,21 @@
+V3 15
+FL /home/near/VHDL/FullAdderStructural/CARRY_.vhd 2019/10/22.03:57:42 P.20131013
+AR work/CARRY/DATAFLOW 0 FL /home/near/VHDL/FullAdderStructural/CARRY_.vhd \
+      EN work/CARRY 0
+EN work/CARRY0 1571696917 \
+      FL /home/near/VHDL/FullAdderStructural/CARRY_.vhd PB ieee/std_logic_1164 1381692176
+AR work/CARRY0/DATAFLOW 1571696918 \
+      FL /home/near/VHDL/FullAdderStructural/CARRY_.vhd EN work/CARRY0 1571696917
+FL /home/near/VHDL/FullAdderStructural/FULL_ADDER.vhd 2019/10/22.03:56:18 P.20131013
+EN work/FULL_ADDER 1571696785 \
+      FL /home/near/VHDL/FullAdderStructural/FULL_ADDER.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/FULL_ADDER/STRUCTURAL 1571696786 \
+      FL /home/near/VHDL/FullAdderStructural/FULL_ADDER.vhd EN work/FULL_ADDER 1571696785 \
+      CP SUM0 CP CARRY0
+FL /home/near/VHDL/FullAdderStructural/SUM_.vhd 2019/10/22.03:58:14 P.20131013
+AR work/SUM/DATAFLOW 0 FL /home/near/VHDL/FullAdderStructural/SUM_.vhd EN work/SUM 0
+EN work/SUM0 1571696908 \
+      FL /home/near/VHDL/FullAdderStructural/SUM_.vhd PB ieee/std_logic_1164 1381692176
+AR work/SUM0/DATAFLOW 1571696909 \
+      FL /home/near/VHDL/FullAdderStructural/SUM_.vhd EN work/SUM0 1571696908

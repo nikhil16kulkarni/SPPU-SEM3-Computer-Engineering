@@ -1,0 +1,5 @@
+set -tmpdir "/home/near/VHDL/FullAdderDataFlow/xst/projnav.tmp"
+set -xsthdpdir "/home/near/VHDL/FullAdderDataFlow/xst"
+elaborate
+-ifn FULL_ADDER.prj
+-ifmt mixed

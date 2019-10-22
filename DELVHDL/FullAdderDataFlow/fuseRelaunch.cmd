@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/near/VHDL/FullAdderDataFlow/TEST_FULL_ADDER_isim_beh.exe" -prj "/home/near/VHDL/FullAdderDataFlow/TEST_FULL_ADDER_beh.prj" "work.TEST_FULL_ADDER" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/near/VHDL/JKFFBehavioral/TEST_JK_FF_isim_beh.exe" -prj "/home/near/VHDL/JKFFBehavioral/TEST_JK_FF_beh.prj" "work.TEST_JK_FF" 

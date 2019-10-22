@@ -1,0 +1,4 @@
+AR inv0 dataflow /home/near/VHDL/MUXStructural/INV0.vhd sub00/vhpl01 1571701774
+EN inv0 NULL /home/near/VHDL/MUXStructural/INV0.vhd sub00/vhpl00 1571701773
+EN or0 NULL /home/near/VHDL/MUXStructural/OR0.vhd sub00/vhpl02 1571701964
+AR or0 dataflow /home/near/VHDL/MUXStructural/OR0.vhd sub00/vhpl03 1571701965

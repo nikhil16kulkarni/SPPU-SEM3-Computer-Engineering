@@ -1,0 +1,5 @@
+vhdl work "OR0.vhd"
+vhdl work "INV0.vhd"
+vhdl work "AND0.vhd"
+vhdl work "MUX.vhd"
+vhdl work "TEST_MUX.vhd"
